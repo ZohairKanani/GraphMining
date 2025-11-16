@@ -1,0 +1,41 @@
+AUC-ENHANCED 3-LAYER GCN - COMPREHENSIVE RESULTS
+============================================================
+
+PERFORMANCE METRICS:
+--------------------
+F1-Score: 0.7788
+AUC-ROC: 0.6781
+Average Precision: 0.9131
+
+COMPARISON WITH BASELINES:
+-------------------------
+Model               | F1-Score | AUC-ROC  
+-------------------------
+Original GCN  | 0.517    | 0.785    
+XGBoost            | 0.928    | 0.932    
+AUC-Enhanced GCN   | 0.779    | 0.678    
+
+IMPROVEMENT ANALYSIS:
+----------------------
+F1-Score improvement vs Original: +50.64%
+AUC-ROC improvement vs Original: -13.62%
+AUC-ROC gap to XGBoost: -27.25%
+
+EXPERIMENT DETAILS:
+------------------
+Training epochs: 80
+Best validation AUC: 0.6727
+Best validation F1: 0.8551
+
+OUTPUT FILES:
+-------------
+✅ gcn_predictions.csv - Model predictions
+✅ gcn_training_history.csv - Training progress
+✅ gcn_metrics.csv - Performance metrics
+✅ gcn_roc_curve.csv - ROC curve data
+✅ gcn_pr_curve.csv - Precision-Recall curve data
+✅ gcn_confusion_matrix.csv - Confusion matrix
+✅ gcn_comprehensive_results.png - Main results plot
+✅ gcn_detailed_analysis.png - Detailed analysis
+✅ enhanced_gcn_visualization.png - Enhanced graph visualization
+✅ output_gcn_enhanced.txt - This summary file

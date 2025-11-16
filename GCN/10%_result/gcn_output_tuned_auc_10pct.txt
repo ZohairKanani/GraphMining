@@ -1,0 +1,45 @@
+TUNED AUC-ENHANCED 3-LAYER GCN - COMPREHENSIVE RESULTS (10% Data)
+======================================================================
+
+PERFORMANCE METRICS:
+--------------------
+F1-Score: 0.8025
+AUC-ROC: 0.6862
+Average Precision: 0.9581
+
+COMPARISON WITH BASELINES:
+-------------------------
+Model               | F1-Score | AUC-ROC  
+-------------------------
+Original GCN  | 0.517    | 0.785    
+XGBoost            | 0.928    | 0.932    
+5% Data GCN  | 0.860    | 0.723    
+Tuned 10% Ours     | 0.802    | 0.686    
+
+IMPROVEMENT ANALYSIS:
+----------------------
+F1-Score improvement vs Original: +55.22%
+AUC-ROC improvement vs Original: -12.59%
+F1-Score improvement vs 5% Data: -6.69%
+AUC-ROC improvement vs 5% Data: -5.09%
+
+EXPERIMENT DETAILS:
+------------------
+Training epochs: 100
+Best validation AUC: 0.6865
+Best validation F1: 0.9219
+Model capacity: Increased (hidden=128, output=64)
+Training regimen: Enhanced for 10% data
+
+OUTPUT FILES:
+-------------
+✅ gcn_tuned_auc_predictions_10pct.csv - Model predictions
+✅ gcn_tuned_auc_training_history_10pct.csv - Training progress
+✅ gcn_tuned_auc_metrics_10pct.csv - Performance metrics
+✅ gcn_tuned_auc_roc_curve_10pct.csv - ROC curve data
+✅ gcn_tuned_auc_pr_curve_10pct.csv - Precision-Recall curve data
+✅ gcn_tuned_auc_confusion_matrix_10pct.csv - Confusion matrix
+✅ gcn_auc_tuned_comprehensive_results_10pct.png - Main results plot
+✅ gcn_auc_tuned_detailed_analysis_10pct.png - Detailed analysis
+✅ gcn_enhanced_auc_visualization_10pct_tuned.png - Enhanced graph visualization
+✅ gcn_output_tuned_auc_10pct.txt - This summary file
