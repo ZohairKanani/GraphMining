@@ -1,0 +1,50 @@
+TUNED AUC-ENHANCED 3-LAYER GraphSAGE - COMPREHENSIVE RESULTS (10% Data WITH L2 REGULARIZATION)
+================================================================================
+
+PERFORMANCE METRICS:
+--------------------
+F1-Score: 0.6800
+AUC-ROC: 0.6461
+Average Precision: 0.9449
+
+COMPARISON WITH BASELINES:
+-------------------------
+Model               | F1-Score | AUC-ROC  
+-------------------------
+Original GraphSAGE  | 0.517    | 0.785    
+XGBoost            | 0.928    | 0.932    
+5% Data GraphSAGE  | 0.860    | 0.723    
+Prev 10% GraphSAGE | 0.757    | 0.695    
+Tuned 10% Ours     | 0.680    | 0.646    
+
+IMPROVEMENT ANALYSIS:
+----------------------
+F1-Score improvement vs Original: +31.53%
+AUC-ROC improvement vs Original: -17.70%
+F1-Score improvement vs 5% Data: -20.93%
+AUC-ROC improvement vs 5% Data: -10.64%
+F1-Score improvement vs Prev 10%: -10.17%
+AUC-ROC improvement vs Prev 10%: -7.04%
+
+EXPERIMENT DETAILS:
+------------------
+Training epochs: 100
+Best validation AUC: 0.6468
+Best validation F1: 0.9219
+Model capacity: Increased (hidden=128, output=64)
+Training regimen: Enhanced for 10% data with L2 regularization
+L2 Lambda: 1e-5
+
+OUTPUT FILES:
+-------------
+✅ tuned_auc_predictions_10pct_l2.csv - Model predictions
+✅ tuned_auc_training_history_10pct_l2.csv - Training progress
+✅ tuned_auc_metrics_10pct_l2.csv - Performance metrics
+✅ tuned_auc_roc_curve_10pct_l2.csv - ROC curve data
+✅ tuned_auc_pr_curve_10pct_l2.csv - Precision-Recall curve data
+✅ tuned_auc_confusion_matrix_10pct_l2.csv - Confusion matrix
+✅ auc_tuned_comprehensive_results_10pct_l2.png - Main results plot
+✅ auc_tuned_detailed_analysis_10pct_l2.png - Detailed analysis
+✅ enhanced_auc_visualization_10pct_tuned_l2.png - Enhanced graph visualization
+✅ output_tuned_auc_10pct_l2.txt - This summary file
+✅ best_auc_optimized_model_10pct_tuned_l2.pth - Saved model with L2 regularization
