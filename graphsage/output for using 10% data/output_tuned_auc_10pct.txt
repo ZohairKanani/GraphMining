@@ -1,0 +1,45 @@
+TUNED AUC-ENHANCED 3-LAYER GraphSAGE - COMPREHENSIVE RESULTS (10% Data)
+======================================================================
+
+PERFORMANCE METRICS:
+--------------------
+F1-Score: 0.7573
+AUC-ROC: 0.6952
+Average Precision: 0.9604
+
+COMPARISON WITH BASELINES:
+-------------------------
+Model               | F1-Score | AUC-ROC  
+-------------------------
+Original GraphSAGE  | 0.517    | 0.785    
+XGBoost            | 0.928    | 0.932    
+5% Data GraphSAGE  | 0.860    | 0.723    
+Tuned 10% Ours     | 0.757    | 0.695    
+
+IMPROVEMENT ANALYSIS:
+----------------------
+F1-Score improvement vs Original: +46.48%
+AUC-ROC improvement vs Original: -11.44%
+F1-Score improvement vs 5% Data: -11.94%
+AUC-ROC improvement vs 5% Data: -3.85%
+
+EXPERIMENT DETAILS:
+------------------
+Training epochs: 97
+Best validation AUC: 0.7000
+Best validation F1: 0.9184
+Model capacity: Increased (hidden=128, output=64)
+Training regimen: Enhanced for 10% data
+
+OUTPUT FILES:
+-------------
+✅ tuned_auc_predictions_10pct.csv - Model predictions
+✅ tuned_auc_training_history_10pct.csv - Training progress
+✅ tuned_auc_metrics_10pct.csv - Performance metrics
+✅ tuned_auc_roc_curve_10pct.csv - ROC curve data
+✅ tuned_auc_pr_curve_10pct.csv - Precision-Recall curve data
+✅ tuned_auc_confusion_matrix_10pct.csv - Confusion matrix
+✅ auc_tuned_comprehensive_results_10pct.png - Main results plot
+✅ auc_tuned_detailed_analysis_10pct.png - Detailed analysis
+✅ enhanced_auc_visualization_10pct_tuned.png - Enhanced graph visualization
+✅ output_tuned_auc_10pct.txt - This summary file
