@@ -1,0 +1,43 @@
+AUC-ENHANCED 3-LAYER GraphSAGE - COMPREHENSIVE RESULTS (WITH L2 REGULARIZATION)
+================================================================================
+
+PERFORMANCE METRICS:
+--------------------
+F1-Score: 0.7882
+AUC-ROC: 0.6588
+Average Precision: 0.9231
+
+COMPARISON WITH BASELINES:
+-------------------------
+Model               | F1-Score | AUC-ROC  
+-------------------------
+Original GraphSAGE  | 0.517    | 0.785    
+XGBoost            | 0.928    | 0.932    
+AUC-Enhanced Ours  | 0.788    | 0.659    
+
+IMPROVEMENT ANALYSIS:
+----------------------
+F1-Score improvement vs Original: +52.46%
+AUC-ROC improvement vs Original: -16.08%
+AUC-ROC gap to XGBoost: -29.32%
+
+EXPERIMENT DETAILS:
+------------------
+Training epochs: 76
+Best validation AUC: 0.6563
+Best validation F1: 0.8547
+L2 Regularization: Enabled (lambda=1e-5)
+
+OUTPUT FILES:
+-------------
+✅ auc_enhanced_predictions.csv - Model predictions
+✅ auc_enhanced_training_history.csv - Training progress
+✅ auc_enhanced_metrics.csv - Performance metrics
+✅ auc_enhanced_roc_curve.csv - ROC curve data
+✅ auc_enhanced_pr_curve.csv - Precision-Recall curve data
+✅ auc_enhanced_confusion_matrix.csv - Confusion matrix
+✅ auc_enhanced_comprehensive_results.png - Main results plot
+✅ auc_enhanced_detailed_analysis.png - Detailed analysis
+✅ enhanced_auc_visualization.png - Enhanced graph visualization
+✅ output_auc_enhanced.txt - This summary file
+✅ best_auc_optimized_model.pth - Saved model with L2 regularization
