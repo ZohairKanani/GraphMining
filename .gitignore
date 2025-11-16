@@ -1,0 +1,6 @@
+# Jupyter notebook kernel metadata (the part that changes with environment)
+*.ipynb
+!*.ipynb
+
+# But actually ignore the metadata inside notebooks
+*.ipynb/*.json
